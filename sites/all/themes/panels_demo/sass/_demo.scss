@@ -1,0 +1,13 @@
+//
+// Custom styles for demo partial
+//
+
+body{
+  background:url("../images/sos.png") repeat;
+}
+
+.page-wrapper{
+  padding:2em 0;
+  background:url("../images/brushed.png") #969696;
+  @include zen-grid-background;
+}
