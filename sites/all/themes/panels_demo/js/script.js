@@ -18,7 +18,8 @@ Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
     // Place your code here.
-
+    //$('.pane-node-field-image').cycle();
+    //$('.field-name-field-image').cycle();
   }
 };
 

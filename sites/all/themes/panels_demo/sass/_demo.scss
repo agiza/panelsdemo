@@ -8,6 +8,40 @@ body{
 
 .page-wrapper{
   padding:2em 0;
-  background:url("../images/brushed.png") #969696;
-  @include zen-grid-background;
+  background:url("../images/sos.png") repeat;
+  //background:url("../images/brushed.png") #969696;
+  //@include zen-grid-background;
+}
+
+.pane-page-logo{
+  padding:0;
+  a{
+    img{
+      border:1px solid #272727;
+    }
+    /*display:inline-block;*/
+  }
+}
+
+.primary-menu .menu{
+  @include horizontal-list();
+  a{
+    font-size:16px;
+    padding:8px 14px;
+    display:inline-block;
+    background:#272727;
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #272727;
+    @include border-radius(3px);
+    &:hover{
+      border:1px solid #00b000;
+      background:#6e6e6e;
+      color:#00b000;
+    }
+  }
+}
+
+.page-tools{
+  @include zen-clear();
 }

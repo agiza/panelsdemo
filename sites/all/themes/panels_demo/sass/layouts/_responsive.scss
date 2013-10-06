@@ -92,16 +92,66 @@ $zen-auto-include-item-base: false;
 
   // Header
   .pane-page-logo{
-    @include zen-grid-item(2, 1);
+    @include zen-grid-item(1, 1);
   }
   .site-name{
-    @include zen-grid-item(4, 4);
+    @include zen-grid-item(6, 2.2);
+    text-transform:uppercase;
   }
   .primary-menu{
-    @include zen-grid-item(6, 8);
+    @include zen-grid-item(4, 1, right);
+    /*background:orange;*/
   }
   .pane-node{
     @include zen-clear();
+    padding-top:20px;
   }
 
+  // Content Area
+
+  .pane-fieldable-panels-pane{
+    @include zen-clear();
+    text-align:center;
+    a{
+      background:#444;
+      color:#fff;
+      text-transform:uppercase;
+      padding:6px;
+      font-weight:bold;
+    }
+  }
+
+  .node-title{
+    @include zen-clear();
+  }
+
+  .pane-node-field-image{
+    width:45%;
+    float:left;
+    //@include zen-grid-item(5, 1);
+    padding-top:1.5em;
+    margin-right:20px;
+    overflow:hidden;
+    display:block;
+    /*min-height:500px;*/
+  }
+  .pane-node-body{
+    //@include zen-grid-item(6, 6);
+    float:right;
+    width:50%;
+  }
+  article{
+    .field-name-field-image{
+      width:45%;
+      float:left;
+      padding-top:1.5em;
+      margin-right:20px;
+      overflow:hidden;
+    }
+    .pane-node-body{
+      //@include zen-grid-item(6, 6);
+      float:right;
+      width:50%;
+    }
+  }
 }
